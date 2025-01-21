@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3. Flexbox </title>
+    <link rel="icon" href="../../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="css/task3.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" class="logo-cloudy">
+            <span class="cloud-letter">ВД</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Главная</a></li>
+                <li><a href="../../index.html#about">Обо мне</a></li>
+                <li><a href="../../index.html#tasks">Задания</a></li>
+                <li><a href="../../index.html#project">Курсовая работа</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content" style="margin-top: 150px;margin-bottom: 40px; text-align: center;">
+        <h1>Задание 3. Flexbox </h1>
+
+        <section class="task-description">
+            <h2>Описание задания</h2>
+            <p>Создать элемент flexbox, который состоит из заданных изображений и слов.</p>
+            <p>По наведению мыши и нажатию его состояние и содержимое меняется.</p>
+            <p>Размер рисунка должен быть <strong>200x200px</strong>.</p>
+            <p><strong>Вариант 4:</strong></p>
+            <img src="image/ware2.jpg" alt="Пример рисунка задания" style="max-width: 200px; margin: 20px auto;">
+        </section>
+
+        <section class="task-implementation">
+            <h2>Реализация</h2>
+            <p>Элемент flexbox успешно создан с использованием CSS.</p>
+            <div class="flexbox-container">
+                <div class="flexbox-item" id="all-states">
+                    <img src="image/ware2.jpg" alt="Фоновое изображение" id="defaultImage">
+                    <img src="image/ware3.png" alt="Кастрюля" class="hover-effect" id="hoverImage">
+                    <img src="image/ware4.png" alt="Крышка" class="lid" id="clickLid">
+                    <div class="label">Магазин "Поваренок"</div>
+                    <div class="label-2">Жаропрочная посуда</div>
+                </div>
+            </div>
+
+            <div class="flexbox-container-2">
+                <div class="flexbox-item" id="all-states">
+                    <img src="image/ware2.jpg" alt="Фоновое изображение" id="defaultImage">
+                    <img src="image/ware3.png" alt="Кастрюля" class="hover-effect" id="hoverImage">
+                    <img src="image/ware4.png" alt="Крышка" class="lid" id="clickLid">
+                    <div class="label">Магазин "Поваренок"</div>
+                    <div class="label-2">Жаропрочная посуда</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Дмитриева Виктория. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>

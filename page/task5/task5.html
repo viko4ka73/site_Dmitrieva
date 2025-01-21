@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5. Перетаскивание объектов</title>
+    <link rel="icon" href="../../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="css/task5.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" class="logo-cloudy">
+            <span class="cloud-letter">ВД</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Главная</a></li>
+                <li><a href="../../index.html#about">Обо мне</a></li>
+                <li><a href="../../index.html#tasks">Задания</a></li>
+                <li><a href="../../index.html#project">Курсовая работа</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content" style="margin-top: 150px; text-align: center;">
+        <h1>Задание 5. Перетаскивание объектов</h1>
+
+        <section class="task-description">
+            <h2>Описание задания</h2>
+            <p>Целью данного задания является создание механизма перетаскивания объектов на веб-странице. Задача состоит
+                в сборке целостного рисунка животного из нескольких элементов:</p>
+            <ul>
+                <li>Количество собираемых элементов: не менее 4.</li>
+                <li>Каждый элемент должен быть повёрнут.</li>
+                <li>Реализовать возможность поворота элементов.</li>
+                <li>При правильной сборке рисунка пользователь должен увидеть анимацию.</li>
+            </ul>
+            <p>Готовая картинка может располагаться в любом месте контента.</p>
+            <p><strong>Вариант 2. Собрать животное.</strong></p>
+            <img src="../../assets/var2.png" alt="Пример рисунка задания" style="max-width: 200px; margin: 20px auto;">
+        </section>
+
+        <section class="task-implementation">
+            <h2>Реализация</h2>
+            <p>Ниже представлен процесс реализации задания</p>
+            <p>Для взаимодействия с элементами используйте мышь.</p>
+
+            <div id="instructions">
+                <p>Перетащите элементы в рамку, поверните их и соберите изображение котика.</p>
+            </div>
+            <div id="game-container">
+                <img src="image/1.png" id="block1" class="piece" draggable="true" alt="Часть пазла">
+                <img src="image/2.png" id="block2" class="piece" draggable="true" alt="Часть пазла">
+                <img src="image/3.png" id="block3" class="piece" draggable="true" alt="Часть пазла">
+                <img src="image/4.png" id="block4" class="piece" draggable="true" alt="Часть пазла">
+                <div id="target-area">
+                </div>
+                <div id="feedback" style="display: none;"></div>
+                <div id="completion-message" style="display: none;">Поздравляем! Пазл собран правильно!</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Дмитриева Виктория. Все права защищены.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио Дмитриевой Виктории</title>
+    <link rel="icon" href="../../../../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../../../index.html" class="logo-cloudy">
+            <span class="cloud-letter">ВД</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a id="logout-button" href="../index.html">Выход</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class=" welcome">
+            <h1 id="greeting"> </h1>
+            <p>Пройдите уровни и найдите слова, соответствующие заданным признакам.
+                Проверьте свои знания и логическое мышление в увлекательной игре "Словоискатель"!</p>
+        </section>
+        <section class="menu">
+            <h1>Выберите уровень</h1>
+            <div class="levels">
+                <button id="level1-button">Уровень 1</button>
+                <button id="level2-button" class="locked">Уровень 2 <span>🔒</span></button>
+                <button id="level3-button" class="locked">Уровень 3 <span>🔒</span></button>
+            </div>
+            <div class="buttons-link">
+                <button id="rating-button" onclick="window.location.href='rating.html'">Рейтинг</button>
+                <button id="rating-button" onclick="window.location.href='history.html'">История</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Дмитриева Виктория. Все права защищены.</p>
+    </footer>
+    <script src="../js/menu.js"></script>
+</body>
+
+</html>

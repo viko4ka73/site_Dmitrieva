@@ -1,0 +1,161 @@
+body {
+    background: linear-gradient(135deg, #f0b085, #bdbeee);
+    height: auto;
+}
+
+ul {
+    text-align: left;
+    padding-left: 100px;
+}
+
+#game-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.piece {
+    width: 150px;
+    height: 150px;
+    cursor: grab;
+    transition: transform 0.3s ease;
+}
+
+.piece:active {
+    cursor: grabbing;
+}
+
+#target-area {
+    width: 700px;
+    height: 500px;
+    border: 2px dotted #df922e;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#target-area p {
+    color: #aaa;
+    font-size: 18px;
+    position: absolute;
+}
+
+#completion-message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    display: none;
+}
+
+@keyframes success {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+        filter: brightness(1) blur(0);
+    }
+
+    25% {
+        transform: rotate(5deg);
+        opacity: 0.9;
+        filter: brightness(1.1) blur(1px);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+        opacity: 0.8;
+        filter: brightness(1.2) blur(2px);
+    }
+
+    75% {
+        transform: rotate(5deg);
+        opacity: 0.9;
+        filter: brightness(1.1) blur(1px);
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+        filter: brightness(1) blur(0);
+    }
+}
+
+#puzzle-container.success {
+    animation: success 1s ease-out;
+}
+
+#puzzle-container.success {
+    animation: success 1.5s ease-in-out;
+}
+
+#target-area.success-animation {
+    animation: success 1s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    #target-area {
+        width: 90%;
+        height: 400px;
+    }
+
+    .piece {
+        width: 130px;
+        height: 130px;
+    }
+
+    ul {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #game-container {
+        padding: 15px;
+    }
+
+    #target-area {
+        width: 90%;
+        height: 350px;
+    }
+
+    .piece {
+        width: 120px;
+        height: 120px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    #completion-message {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #game-container {
+        padding: 10px;
+    }
+
+    #target-area {
+        width: 90%;
+        height: 300px;
+    }
+
+    .piece {
+        width: 100px;
+        height: 100px;
+    }
+
+    ul {
+        padding-left: 10px;
+    }
+
+    #completion-message {
+        font-size: 16px;
+    }
+}

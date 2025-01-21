@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3. DOM </title>
+    <link rel="icon" href="../../assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="css/task4.css">
+</head>
+
+<body>
+    <header>
+        <a href="../../index.html" class="logo-cloudy">
+            <span class="cloud-letter">ВД</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Главная</a></li>
+                <li><a href="../../index.html#about">Обо мне</a></li>
+                <li><a href="../../index.html#tasks">Задания</a></li>
+                <li><a href="../../index.html#project">Курсовая работа</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Задание 4. DOM</h1>
+        <section class="task-description">
+            <h2>Описание задания</h2>
+            <p>Создать интерактивный элемент с использованием классов и событий.</p>
+            <p>При каждом четном нажатии выводится фраза класса class1, при нечетном class2.</p>
+            <p>Фразы выводятся в случайном, не повторяющемся порядке. <br /> Когда фразы заканчиваются, то выводится
+                alert c фразой "Фразы закончились".</p>
+            <p>По нажатию на "Перекрасить" у всех четных строк изменяется начертание на полужирное.</p>
+            <p>На странице в части aside создать нумерованный список. По нажатию на кнопку "Создать" в этом тэге фраза
+                выводится в виде элемента многоуровневого списка.
+            </p>
+        </section>
+
+        <section class="task-implementation">
+            <h2>Реализация</h2>
+            <div>
+                <button id="display-phrase">Показать фразу</button>
+                <button id="recolor">Перекрасить</button>
+                <button id="create-list">Создать список</button>
+            </div>
+            <div id="phrases-container"></div>
+        </section>
+
+        <aside>
+            <h3>Список</h3>
+            <ol id="nested-list"></ol>
+
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Дмитриева Виктория. Все права защищены.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+body {
+    background: linear-gradient(135deg, #e8f1f5, #a6cfd5);
+    height: auto;
+}
+
+h1 {
+    font-size: 2em;
+    color: #0469a9;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.css-bird {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.css-bird::before {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 200px;
+    background: radial-gradient(circle at 50% 65%, #f8fcfc 5%, #41aabd 70%);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #0469a9;
+}
+
+
+.css-bird::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    background: radial-gradient(circle at 50% 65%, #f8fcfc 5%, #157a8f 70%);
+    border-radius: 50%;
+    top: 60%;
+    left: 5px;
+    transform: translateY(-50%) rotate(30deg);
+    z-index: -1;
+}
+
+
+.css-bird .wing-right {
+    position: absolute;
+    width: 40px;
+    height: 100px;
+    background: radial-gradient(circle at 50% 65%, #f8fcfc 5%, #157a8f 70%);
+    border-radius: 50%;
+    top: 60%;
+    right: 5px;
+    transform: translateY(-50%) rotate(-30deg);
+    z-index: -1;
+}
+
+
+.css-bird .eye-left {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #0469a9;
+    border-radius: 50%;
+    top: 20%;
+    left: 35%;
+    z-index: 2;
+}
+
+
+.css-bird .eye-right {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    background-color: white;
+    border: 2px solid #0469a9;
+    border-radius: 50%;
+    top: 20%;
+    left: 55%;
+    z-index: 2;
+}
+
+
+.css-bird .eye-left::before,
+.css-bird .eye-right::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 23px;
+    background-color: #0469a9;
+    border-radius: 50%;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.css-bird .beak {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #0469a9;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+
+.css-bird .crest {
+    position: absolute;
+    top: -7%;
+    z-index: -2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.css-bird .crest::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 20px solid #0469a9;
+    top: 0;
+    left: -13px;
+    transform: rotate(25deg);
+}
+
+.css-bird .crest::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 20px solid #0469a9;
+    top: 0;
+    left: -2px;
+    transform: rotate(25deg);
+}
+
+.css-bird .crest-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 20px solid #0469a9;
+    top: 0;
+    left: 8px;
+    transform: rotate(25deg);
+}
+
+
+.css-bird .leg {
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #0469a9;
+    bottom: -25px;
+    transform-origin: top;
+    z-index: -1;
+}
+
+.css-bird .leg-left {
+    left: 42%;
+    transform: rotate(10deg);
+}
+
+.css-bird .leg-left::before,
+.css-bird .leg-left::after,
+.css-bird .leg-left .toe-middle {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #0469a9;
+    bottom: 0;
+}
+
+.css-bird .leg-left::before {
+    transform: rotate(-45deg);
+    left: -8.5px;
+}
+
+.css-bird .leg-left::after {
+    transform: rotate(30deg);
+    right: -9px;
+}
+
+.css-bird .leg-left .toe-middle {
+    transform: rotate(80deg);
+    left: -4px;
+}
+
+.css-bird .leg-right {
+    left: 55%;
+    transform: rotate(10deg);
+}
+
+.css-bird .leg-right::before,
+.css-bird .leg-right::after,
+.css-bird .leg-right .toe-middle {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #0469a9;
+    bottom: 0;
+}
+
+.css-bird .leg-right::before {
+    transform: rotate(-45deg);
+    left: -8.5px;
+}
+
+.css-bird .leg-right::after {
+    transform: rotate(30deg);
+    right: -9px;
+}
+
+.css-bird .leg-right .toe-middle {
+    transform: rotate(90deg);
+    left: -4px;
+}

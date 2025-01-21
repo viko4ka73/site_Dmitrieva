@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(135deg, #bcdaf1, #eeccd4);
+    height: auto;
+}
+
+main {
+    max-width: 800px;
+    margin: 150px auto;
+    padding: 20px;
+
+}
+
+.task-description,
+.task-implementation {
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #61768a;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.task-description h2,
+.task-implementation h2 {
+
+    padding-bottom: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#phrases-container {
+    margin-top: 20px;
+}
+
+.class1 {
+    background-color: #bcdaf1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.class2 {
+    background-color: #eeccd4;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+aside {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+aside h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+ol {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: left;
+    list-style-position: inside;
+}
+
+ol ul {
+    padding: 0;
+    margin: 0;
+}
+
+.class1-list,
+.class2-list {
+    background-color: #bcdaf1;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    list-style-position: inside;
+}
+
+.class2-list {
+    background-color: #eeccd4;
+}
+
+.nested-sublist {
+    margin-left: 20px;
+    padding-left: 0;
+}
