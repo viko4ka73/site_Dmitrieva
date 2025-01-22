@@ -20,6 +20,7 @@ p {
 }
 
 
+
 header {
   display: flex;
   justify-content: space-between;
@@ -32,6 +33,7 @@ header {
   top: 0;
   z-index: 1000;
 }
+
 
 .logo-cloudy {
   display: flex;
@@ -66,22 +68,76 @@ header {
     10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
+
+.burger-menu {
+  position: relative;
 }
 
-nav a {
+.burger-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.burger-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: #98b7d1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger-toggle.open span:nth-child(1) {
+  transform: rotate(40deg);
+  position: relative;
+  top: 8px;
+}
+
+.burger-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-toggle.open span:nth-child(3) {
+  transform: rotate(-40deg);
+  position: relative;
+  top: -6px;
+}
+
+.menu-items {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.menu-items li {
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+.menu-items a {
   text-decoration: none;
   color: #333333;
   font-weight: bold;
   padding: 5px 10px;
+  display: block;
   transition: color 0.3s;
 }
 
-nav a:hover {
+.menu-items a:hover {
   color: #d8bfd8;
+}
+
+.burger-menu.open .menu-items {
+  display: flex;
 }
 
 .hero-section {

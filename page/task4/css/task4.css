@@ -29,7 +29,7 @@ h1 {
     padding-bottom: 5px;
 }
 
-button {
+.task-implementation button {
     background-color: #333;
     color: #fff;
     padding: 10px 15px;
@@ -40,7 +40,7 @@ button {
     margin: 5px;
 }
 
-button:hover {
+.task-implementation button:hover {
     background-color: #555;
 }
 

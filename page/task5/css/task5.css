@@ -3,7 +3,7 @@ body {
     height: auto;
 }
 
-ul {
+.task-description ul {
     text-align: left;
     padding-left: 100px;
 }
