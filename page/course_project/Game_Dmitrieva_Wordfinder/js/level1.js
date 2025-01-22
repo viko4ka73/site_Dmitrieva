@@ -51,10 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayQuestion() {
         const question = questions[currentQuestionIndex];
-
+        const hintElement = document.getElementById("hint");  
+        hintElement.style.display = 'none';  
+    
         if (question.type === "choice") {
             gameArea.innerHTML = ` 
+              <div id="hint" class="hint" style="display: inline-block;"> <span style="font-weight: bold; color: #FF6347;">Подсказка:</span> Нажмите на один правильный ответ.</div>
                 <div class="question">${question.question}</div>
+              
                 <div class="answers">
                     ${question.items.map(item => ` 
                         <div class="game-item">
@@ -67,8 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 button.addEventListener('click', checkAnswer);
             });
         } else if (question.type === "grid") {
-            correctGridSelections = 0;
-            gameArea.innerHTML = `
+          
+            gameArea.innerHTML = ` 
+              <div id="hint" class="hint" style="display: inline-block;"> <span style="font-weight: bold; color: #FF6347;">Подсказка:</span> Нажмите на несколько правильных ответов.</div>
                 <div class="question">${question.question}</div>
                 <div class="grid-container">
                     ${question.grid.map(item => `
@@ -81,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
     }
+    
 
     function checkAnswer(event) {
         const selectedAnswer = event.target.textContent;

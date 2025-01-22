@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
         if (question.type === "drag-and-drop") {
             gameArea.innerHTML = `
+               <div id="hint" class="hint" style="display: inline-block;"> <span style="font-weight: bold; color: #FF6347;">Подсказка:</span> Перетащите ответы в соответствующие группы.</div>
                 <div class="question">${question.question}</div>
                 <div class="group-container">
                     <div class="group" id="predators">
@@ -115,6 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         else if (question.type === "text") {
             gameArea.innerHTML = `
+                <div id="hint" class="hint" style="display: inline-block;"> <span style="font-weight: bold; color: #FF6347;">Подсказка:</span>Введите ответ и нажмите ENTER.</div>
                 <div class="question">${question.question}</div>
                 <input type="text" id="text-answer" class="answer-input" placeholder="Введите ответ">
                 <div id="correct-answer" class="correct-answer" style="display: none;">Правильный ответ: ${question.correctAnswer}</div>

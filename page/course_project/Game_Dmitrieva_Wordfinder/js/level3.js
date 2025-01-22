@@ -76,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gameData.correctAnswers.push(question.correctLetters); 
     if (question.type === "select-words") {  
         gameArea.innerHTML = `
+        <div id="hint" class="hint" style="display: inline-block;">  <span style="font-weight: bold; color: #FF6347;">Подсказка:</span> Нажмите на все правильные ответы.</div>
             <p>${question.text}</p>
             <div id="words-container" class="words-container"></div>
             <div id="instructions">
@@ -93,6 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }).join("");
 
         gameArea.innerHTML = `
+             <div id="hint" class="hint" style="display: inline-block;">  <span style="font-weight: bold; color: #FF6347;">Подсказка:</span> С помощью двойного клика выберите букву</div>
             <div class="question">${questionText}</div>
             <div class="letters">
                 ${question.letters.map(letter => `<div class="letter" ondblclick="insertLetter(event, '${letter}')">${letter}</div>`).join('')}
