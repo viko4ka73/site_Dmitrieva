@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
             correctGridSelections = 0;
             gameArea.innerHTML = `
                 <div class="question">${question.question}</div>
-                <div class="grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                <div class="grid-container">
                     ${question.grid.map(item => `
                         <div class="grid-item answer-button" style="padding: 10px; border: 1px solid #ccc; text-align: center; cursor: pointer;">${item}</div>
                     `).join('')}

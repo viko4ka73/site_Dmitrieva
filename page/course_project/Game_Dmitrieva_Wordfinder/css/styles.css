@@ -388,6 +388,24 @@ main {
     }
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+
 #time-left,
 #score-value {
     transition: color 0.3s ease, font-size 0.3s ease;
@@ -477,6 +495,41 @@ main {
     position: relative;
     background-color: #fafafa;
     border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    .group-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .group {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .group h3 {
+        font-size: 1.2em;
+    }
+
+    .drop-area {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .group {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .group h3 {
+        font-size: 1em;
+    }
+
+    .drop-area {
+        padding: 10px;
+    }
 }
 
 .options {
@@ -823,7 +876,6 @@ td {
 th {
     background-color: #f4f4f4;
 }
-
 
 .delete-animation {
     opacity: 0;
